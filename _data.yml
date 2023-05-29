@@ -1,0 +1,15 @@
+home:
+  welcome: 🔥 mdp_blog
+
+metas:
+  site: 🔥 mdp_blog
+  description: Blog of Manuel de Prada Corral
+  twitter: "@manudeprada"
+  lang: en
+
+mergedKeys:
+  metas: object
+
+menu_links:
+  - text: main web
+    href: https://manueldeprada.com
