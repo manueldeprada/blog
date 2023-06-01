@@ -9,6 +9,10 @@ author: Manuel de Prada Corral
 date: 2020-10-06
 ---
 
+Breve resumen de mi experiencia cambiando el router Sercomm H500-s de Vodafone por un router neutro con OpenWrt, explicando los problemas para obtener las credenciales PPPoE y cómo solucionarlos.
+
+<!-- more -->
+
 En mi caso dispongo de este router de Vodafone conectado a un ONT Lucent. Soy usuario de fibra directa, no NEBA. El Sercomm tiene la última versión de firmware a septiembre de 2020, la 3.5.09.
 
 Como ya sabrás, para obtener el nombre de usuario y contraseña de este router para realizar la conexión PPPoE hay que escuchar entre el router y el ONT y capturar el tráfico. La mayoría de tutoriales, ([este](https://bandaancha.eu/articulos/conseguir-admin-router-sercomm-h500-s-9602/2) para mi es de referencia)  acceden al router como admin para forzar redirigir todo el tráfico entre el ONT y el router a la interfaz del PC, y así poder escuchar el tráfico con Wireshark. 

@@ -18,7 +18,7 @@ const head_long_string = `
                   {left: "$$", right: "$$", display: true},
                   {left: "\\[", right: "\\]", display: true},
                   {left: "$", right: "$", display: false},
-                  {left: "\\(", right: "\\)", display: false}
+                  //{left: "\\(", right: "\\)", display: false}
               ]};
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="renderMathInElement(document.body, options);">
@@ -36,11 +36,14 @@ mermaidNodes.forEach((node) => {
   let new_node = document.createElement('div');
   new_node.innerHTML = node.innerHTML;
   //center the graph
-  new_node.style.display = 'block';
+  new_node.style.display = 'flex';
   new_node.style.margin = '0 auto';
   new_node.style.maxWidth = '100%';
   new_node.style.overflow = 'auto';
-  new_node.style.width = 'fit-content';
+  //new_node.style.width = 'fit-content';
+  new_node.style.backgroundColor = 'white';
+  new_node.style.borderRadius = '10px'; 
+  new_node.style.justifyContent = 'center';
   node.parentNode.parentNode.replaceChild(new_node, node.parentNode);
 });
 </script>
